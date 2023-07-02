@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <title>
+            Actividad de la maestra
+        </title>
+    </head>
+<body>
+    <p>
+       Cómo declarar arrays 
+        <h4 id="declarar_arrays"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo obtener el primer elemento del array
+        <h4 id="acceder_primer_elemento"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+       Cómo obtener el segundo elemento del array
+        <h4 id="acceder_segundo_elemento"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo obtener el tercer elemento del array
+        <h4 id="acceder_tercer_elemento"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+       Cómo obtener la longitud del array
+        <h4 id="ver_longitud_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo crear un bucle del array
+        <h4 id="bucle_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo añadir un elemento al final de un array
+        <h4 id="añadir_elemento_al_final_de_un_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo añadir más elementos al final de un array
+        <h4 id="añadir_más_elementos_al_final_de_un_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo declarar arrays con el alfabeto 
+        <h4 id="ver_array_alfabeto"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo ordenar los arrays del alfabeto 
+        <h4 id="ver_array_alfabeto_ordenado"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo invertir los arrays del alfabeto 
+        <h4 id="ver_array_invertido"> 
+        </h4>
+    </p>
+<hr>      
+    <p>
+        cómo declarar arrays con números 
+        <h4 id="ver_array_num"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo encontrar el número de máximo valor en el array 
+        <h4 id="ver_num_max"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo encontrar el número de mínimo valor en el array 
+        <h4 id="ver_num_min"> 
+        </h4>
+    </p>
+
+    <h3 style="background-color: red; font-size: 23px;">
+        ACTIVIDAD ADICIONAL
+    </h3>
+    <p>
+        Cómo añadir un elemento al inicio de un array
+        <h4 id="añadir_elemento_al_inicio_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo añadir más elementos al inicio de un array
+        <h4 id="añadir_más_elementos_al_inicio_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo remover un elemento al inicio de un array
+        <h4 id="remover_elemento_al_inicio_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo remover un elemento al final de un array
+        <h4 id="remover_elemento_al_final_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo unir dos arrays
+        <h4 id="unir_dos_arrays"> 
+        </h4>
+    </p>
+</body>
+
+<script>
+
+    //Cómo declarar un array. El id para referirnos al innerHTML es declarar_arrays
+    var frutas = ["Manzana", "Naranja", "Mango"];
+    console.log(frutas);
+    document.getElementById("declarar_arrays").innerHTML = frutas;
+
+    //Cómo obtener el primer elemento de un array. El id para referirnos al innerHTML es acceder_primer_elemento
+    var primera_fruta = frutas[0];
+    console.log(primera_fruta);
+    document.getElementById("acceder_primer_elemento").innerHTML = primera_fruta;
+
+    //Cómo obtener el segundo elemento de un array. El id para referirnos al innerHTML es acceder_segundo_elemento
+    var segunda_fruta = frutas[1];
+    console.log(segunda_fruta);
+    document.getElementById("acceder_segundo_elemento").innerHTML = segunda_fruta;
+
+    //Cómo obtener el tercer elemento de un array. El id para referirnos al innerHTML es acceder_tercer_elemento
+    var tercera_fruta = frutas[2];
+    console.log(tercera_fruta);
+    document.getElementById("acceder_tercer_elemento").innerHTML = tercera_fruta;
+
+    //Cómo obtener la longitud del array. El id para referirnos al innerHTML es ver_longitud_del_array
+    var longitud_del_array = frutas.length;
+    console.log(longitud_del_array);
+    document.getElementById("ver_longitud_del_array").innerHTML = longitud_del_array;
+
+    //Cómo crear un bucle del array. El id para referirnos al innerHTML es bucle_del_array
+    var valor_array = "";
+    for (i = 0; i < frutas.length; i++) {
+        console.log(frutas[i]);
+        valor_array = valor_array + frutas[i] + "<br>";
+    }
+    document.getElementById("bucle_del_array").innerHTML = valor_array;
+
+    //Añadir un elemento al final de un array con el método push
+    //Cómo añadir un elemento al final de un array. El id para referirnos al innerHTML es añadir_elemento_al_final_de_un_array
+    frutas.push("Limón");
+    console.log(frutas);
+    document.getElementById("añadir_elemento_al_final_de_un_array").innerHTML = frutas;
+
+    //Cómo añadir más elementos al final de un array. El id para referirnos al innerHTML es añadir_más_elementos_al_final_de_un_array
+    frutas.push("Cereza");
+    console.log(frutas);
+    document.getElementById("añadir_más_elementos_al_final_de_un_array").innerHTML = frutas;
+
+    //Cómo declarar un array con el alfabeto. El id para referirnos al innerHTML es ver_array_alfabeto
+    var alfabeto = ["l" ,"a" , "e" , "j" , "b" , "g" , "f" , "h" , "c" , "d" , "i" , "k"];
+    console.log(alfabeto);
+    document.getElementById("ver_array_alfabeto").innerHTML = alfabeto;
+
+    //Cómo ordenar el array del alfabeto. El id para referirnos al innerHTML es ver_array_alfabeto_ordenado
+    alfabeto.sort();
+    console.log(alfabeto);
+    document.getElementById("ver_array_alfabeto_ordenado").innerHTML = alfabeto;
+
+    //Cómo invertir el array. El id para referirnos al innerHTML es ver_array_invertido
+    alfabeto.reverse();
+    console.log(alfabeto);
+    document.getElementById("ver_array_invertido").innerHTML = alfabeto;
+
+    //Cómo declarar un array con números. El id para referirnos al innerHTML es ver_array_num
+    var números = ["45", "4", "9", "16", "25"];
+    console.log(números);
+    document.getElementById("ver_array_num").innerHTML = números;
+
+    //Cómo declarar un número con valor máximo del array con números. El id para referirnos al innerHTML es ver_num_max
+    var número_max = Math.max.apply(Math, números);
+    console.log(número_max);
+    document.getElementById("ver_num_max").innerHTML = número_max;
+
+    //Cómo encontrar el número con valor mínimo del array con números. El id para referirnos al innerHTML es ver_num_min
+    var número_min = Math.min.apply(Math, números);
+    console.log(número_min);
+    document.getElementById("ver_num_min").innerHTML = número_min;
+
+    console.log("ACTIVIDAD ADICIONAL");
+
+    //Añadir un elemento al inicio de un array con el método unshift
+    //Cómo añadir un elemento al inicio de un array. El id para referirnos al innerHTML es añadir_elemento_al_inicio_del_array
+    frutas.unshift("Sandía");
+    console.log(frutas);
+    document.getElementById("añadir_elemento_al_inicio_del_array").innerHTML = frutas;
+
+    //How to more elements at the start of the array ? El id para referirnos al innerHTML es añadir_más_elementos_al_inicio_del_array
+    frutas.unshift("Fresa");
+    console.log(frutas);
+    document.getElementById("añadir_más_elementos_al_inicio_del_array").innerHTML = frutas;
+
+    //Cómo remover un elemento al inicio de un array. El id para referirnos al innerHTML es remover_elemento_al_inicio_del_array
+    frutas.shift();  
+    console.log(frutas);
+    document.getElementById("remover_elemento_al_inicio_del_array").innerHTML = frutas;
+
+    //Cómo remover un elemento al final de un array. El id para referirnos al innerHTML es remover_elemento_al_final_del_array
+    frutas.pop();  
+    console.log(frutas);
+    document.getElementById("remover_elemento_al_final_del_array").innerHTML = frutas;
+
+    //Cómo declarar un array con países del primer mundo 
+    var países_primer_mundo = ["USA" , "CANADA" , "JAPÓN"];
+
+    //Cómo declarar un array con países del primer mundo 
+    var países_segundo_mundo = ["CHINA" , "RUSIA" , "RUMANIA"];
+
+    //Cómo unir dos arrays. El id para referirnos al innerHTML es unir_dos_arrays
+    var todos_los_países = países_primer_mundo.concat(países_segundo_mundo);
+    console.log(todos_los_países);
+    document.getElementById("unir_dos_arrays").innerHTML = todos_los_países;
+
+</script>
+</html>
